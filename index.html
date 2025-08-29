@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Service Directory</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Service Directory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
 </head>
-<body>
-    
-</body>
-</html>
+<body class="inter-font">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-sm">
+    <div class="mx-auto max-w-[1920] px-4 sm:px-6 lg:px-24 py-2">
+      <div class="flex h-16 items-center justify-between">
+
+        <!-- Left: Logo + Name -->
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 grid rounded-full">
+            <img src="./B12-A5-Emergency-Hotline/assets/logo.png" alt="">
+          </div>
+          <div class="leading-tight">
+            <div class="text-lg font-bold text-green-900">Emergency</div>
+            <div class="text-lg font-bold text-green-900 -mt-1.5">Service</div>
+          </div>
+        </div>
+
+        <!-- Right: 3-item's -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <div class="flex items-center gap-1 rounded-full border bg-green-100 px-6 py-1.5 text-sm shadow-sm">
+            <span class="font-bold" id="likeCount">0</span>
+            <span class="select-none h-5 w-5">
+                <img src="./B12-A5-Emergency-Hotline/assets/heart.png" alt="">
+            </span>
+            
+          </div>
+          <div class="flex items-center gap-1 rounded-full border bg-green-100 px-4 py-1.5 text-sm shadow-sm">
+            <span class="font-bold" id="coinCount">100</span>
+            <span class="select-none h-5 w-5">
+              <img src="./B12-A5-Emergency-Hotline/assets/coin.png" alt="">
+            </span>
+            
+          </div>
+          <div class="flex items-center gap-1 rounded-full border bg-00A63E px-5 py-1.5 text-sm shadow-sm bg-green-600 hover:bg-green-700 text-white">
+            <span class="select-none"></span>
+            <span class="font-semibold" id="copyCount">0</span>
+            <span class="text-base font-semibold ml-1">Copy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
